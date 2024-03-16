@@ -1,6 +1,7 @@
 """ messing around with annotations """
 import json
 from datetime import datetime
+
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 
@@ -43,4 +44,5 @@ plt.axvline(lowest_date, color='red', linestyle='--', linewidth=1)
 # here we add the horizontal line
 plt.axhline(lowest, color='orange', linestyle='--', linewidth=1)
 
+fig.savefig("saved_plots\\annotated_with_lines.png")
 plt.show()
