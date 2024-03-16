@@ -5,7 +5,7 @@ from datetime import datetime
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 
-# get weather data
+# get weather data: This data represents the temperatures for 15 days in dubai
 with open("json_files/dubai.json", "r") as file:
     weather = json.load(file)
 
@@ -24,7 +24,7 @@ ax.plot_date(x, y, label="Temperature", linestyle="-")
 
 ax.set_xlabel("Date", size=12, labelpad=5)
 ax.set_ylabel("Temperature")
-plt.title("Temps and dates")
+plt.title("Temperatures in Dubai from 30-Apr to 15-May 2023")
 
 lowest = min(y)
 lowest_date = weather["time"][y.index(lowest)]
