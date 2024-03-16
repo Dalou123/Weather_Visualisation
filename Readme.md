@@ -13,7 +13,7 @@ The other files are different methods of visualizing the data. Each file creates
 * `plotting_dubai.py` In this file I am applying many plotting concepts and created a figure with multiple subplots: line chart, pie chart, histogram, plot with 2 axes.
 
 # To run the project
-1. Make sure you have at least python 3.5 installed
+1. Make sure you have at least python 3.9 installed
 2. Create a virtual environment and install requirements:
 
    * For Windows 
