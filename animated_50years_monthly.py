@@ -117,4 +117,35 @@ ani.save(filename="saved_plots\\temps.gif", writer="pillow")
 ani.save(filename="saved_plots\\temps.mp4", writer="ffmpeg")
 
 
+###############################################################################
+# create animation: METHOD 2 ArtistAnimation
+###############################################################################
+# # doesn't work with a scatter plot, because it returns an incompatible
+# # object type
+# artists = []
+# for i in range(1, 13):
+#     # generate the x and y values for the month
+#     years, days, max_temp, month_name = \
+#                    get_this_month_weather(i, weather_value, weather, weather)
+
+#     print(f"{type(years)}, {type(days)}, {type(max_temp)}, {type(month_name)}")
+
+#     bc = ax.scatter(days, years,
+#                     vmin=lowest, vmax=highest,
+#                     c=max_temp, cmap='rainbow')
+
+#     ax.set_title(f"Temperatures for {month_name} the past 53 years",
+#                  fontsize=15, weight='bold')
+#     artists.append(bc)
+#     print(artists)
+#     break
+
+
+# fig.colorbar(bc, ax=ax, extend='both')
+# ax.set_xlabel("Days", fontsize=12, weight='bold')
+# ax.set_ylabel("Years", fontsize=12, weight='bold')
+
+
+# ani = animation.ArtistAnimation(fig=fig, artists=artists, interval=400)
+
 plt.show()
