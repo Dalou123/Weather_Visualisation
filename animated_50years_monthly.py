@@ -113,8 +113,8 @@ def update(frame):
 ani = animation.FuncAnimation(fig=fig, func=update, frames=12, interval=300,)
 
 # save plot as gif and mp4 files
-ani.save(filename="saved_plots\\temps.gif", writer="pillow")
-ani.save(filename="saved_plots\\temps.mp4", writer="ffmpeg")
+ani.save(filename="saved_plots\\animated_50years_monthly.gif", writer="pillow")
+ani.save(filename="saved_plots\\animated_50years_monthly.mp4", writer="ffmpeg")
 
 
 ###############################################################################

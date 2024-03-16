@@ -77,5 +77,5 @@ ax.set_title(
 )
 
 # save plot then display it
-plt.savefig("saved_plots\\Beirut_50_years.png")
+plt.savefig("saved_plots\\50years_one_day.png")
 plt.show()

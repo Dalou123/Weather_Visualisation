@@ -1,5 +1,5 @@
 """
-Plotting the weather data in dubai for a duration of 10 days.
+Plotting the weather data in dubai for a duration of 15 days.
 Here I am trying out a few functionalities of the matplotlib library by
 implementing a figure that contains 4 axes where each ax is of a different
 type. I'm also adding multiple values to a single plot, customizing
@@ -158,5 +158,5 @@ ax2.annotate(
     bbox=dict(boxstyle="square", fc="w"),
 )
 
-fig.savefig("saved_plots\\dubai_weather.png")
+fig.savefig("saved_plots\\plotting_dubai.png")
 plt.show()
